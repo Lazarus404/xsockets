@@ -1,0 +1,11 @@
+# Prove SCTP-over-IP on Linux (optional feature).
+#
+#   docker compose -f docker-compose.sctp.yml run --rm xsockets-sctp
+#
+services:
+  xsockets-sctp:
+    build:
+      context: .
+      dockerfile: Dockerfile.sctp
+    # Host networking not required for loopback assoc tests inside the container.
+    command: ["mix", "test", "--only", "sctp", "--trace"]
