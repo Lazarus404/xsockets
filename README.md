@@ -7,8 +7,6 @@ TLS, DTLS, and (optionally) SCTP -- without baking in STUN, TURN, RTP, or SIP.
 Those protocols live in *your* app. XSockets just handles the pipes and the
 "when is a full packet ready?" part.
 
-Home: [https://github.com/Lazarus404/xsockets](https://github.com/Lazarus404/xsockets)
-
 ## What problem this solves
 
 If you have built a real-time server, you have probably written the same GenServer
